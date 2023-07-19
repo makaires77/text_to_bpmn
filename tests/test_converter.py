@@ -9,17 +9,17 @@ class TestTextToBpmnConverter(unittest.TestCase):
     def test_parse_text(self):
         converter = TextToBpmnConverter("FASE PREPARAR AMBIENTE DE DESENVOLVIMENTO")
         converter.parse_text()
-        # Aqui você pode escrever código para verificar se o gráfico BPMN foi construído corretamente
+        # Verificar se o gráfico BPMN foi construído corretamente
 
     def test_create_bpmn(self):
         converter = TextToBpmnConverter("FASE PREPARAR AMBIENTE DE DESENVOLVIMENTO")
         converter.create_bpmn()
-        # Aqui você pode escrever código para verificar se o gráfico BPMN foi construído e disposto corretamente
+        # Verificar se o gráfico BPMN foi construído e disposto corretamente
 
     def test_visualize_bpmn(self):
         converter = TextToBpmnConverter("FASE PREPARAR AMBIENTE DE DESENVOLVIMENTO")
         converter.visualize_bpmn()
-        # Aqui você pode escrever código para verificar se a visualização do gráfico BPMN foi gerada corretamente
+        # Verificar se a visualização do gráfico BPMN foi gerada corretamente
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,8 +1,4 @@
-# text_to_bpmn
-Um parser de texto capaz de retornar diagramas BPMN
-
-
-# Como crar o repositório no GitHub pela máquina local
+# Criar o repositório no GitHub pela máquina local
 Inicie o repositório Git e crie o repositório GitHub: 
 Dentro do diretório principal /text_to_bpmn, inicie um novo repositório Git com git init. 
 Crie um novo repositório GitHub através do site do GitHub. 
