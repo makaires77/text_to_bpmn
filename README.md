@@ -28,7 +28,7 @@ A razão para essa distinção é proporcionar o encapsulamento de dados, que é
 | PowerShell          | camelCase para variáveis, PascalCase para funções e cmdlets  | Use Verb-Noun para cmdlets     |
 | Bash (Google's Guide)| snake_case para funções e variáveis                          | Evite caracteres especiais e espaços |
 
-# Links para as guias de estilo
+# Links para guias de estilo populares em suas comunidades
 
 GO: Guia de Estilo do Go (Effective Go), disponível em: 
     'https://golang.org/doc/effective_go.html'
