@@ -25,7 +25,7 @@ A razão para essa distinção é proporcionar o encapsulamento de dados, que é
 | Go (Effective Go)   | MixedCase para exportados, camelCase para não exportados     | Conciso, mnemônico             |
 | Python (PEP 8)      | snake_case para funções e variáveis, PascalCase para classes | Use nomes significativos       |
 | JavaScript (Airbnb) | camelCase para variáveis e funções, PascalCase para classes  | Evite abreviações              |
-| PowerShell          | PascalCase para funções e cmdlets, camelCase para variáveis  | Use Verb-Noun para cmdlets     |
+| PowerShell          | camelCase para variáveis, PascalCase para funções e cmdlets  | Use Verb-Noun para cmdlets     |
 | Bash (Google's Guide)| snake_case para funções e variáveis                          | Evite caracteres especiais e espaços |
 
 # Links para as guias de estilo
