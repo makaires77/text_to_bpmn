@@ -13,7 +13,7 @@ class TextToBpmnConverter:
 
     def parse_text(self):
         # Divide o texto em fases
-        phases = re.split(r'\n(?=FASE)', self.text)
+        phases = re.split(r'\n(?=PROCESSO)', self.text)
 
         for phase in phases:
             phase_lines = phase.strip().split("\n")
@@ -47,4 +47,3 @@ class TextToBpmnConverter:
         
     def visualize_bpmn(self):
         BpmnDiagramVisualizer.generate_visualization(self.bpmn_graph)
-

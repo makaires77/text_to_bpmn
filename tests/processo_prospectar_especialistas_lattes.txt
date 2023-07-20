@@ -1,0 +1,62 @@
+# <CENTER> **PROCESSO: Indentificar especialistas de domínio**
+
+**P01: PREPARAR AMBIENTE DE DESENVOLVIMENTO**
+
+    Criar ambiente de desenvolvimento
+    Instalar pacotes e bilbiotecas necessárias
+    Verificar instalações na instância atual do ambiente
+    Verificar caminhos disponíveis no Path do ambiente
+    Verificar instalação e configuração da GPU local
+    Verificar Pastas Locais armanezamento de dados
+
+**P02: IMPLEMENTAR FUNÇÕES DE LEVANTAMENTO**
+
+    Módulo Visualizar tempo de execução das funções do levantamento de dados
+    Módulo Pré-Processar os termos para gerar melhores queries de busca
+    Módulo Definir melhor estratégia de busca com base nos resultados
+    Módulo Prospectar Nomes de especialistas na Plataforma Lattes
+    Módulo Extrair Currículo Lattes de lista de especialistas
+    Módulo Processar dados dos currículos Lattes extraídos
+    Módulo Quantificar especialidade com base em indicador
+    Módulo Aplicar cálculo do indicador de especialidade
+    Módulo Visualizar informações produto das análises 
+
+**P03: PLANEJAR LEVANTAMENTO DE DADOS**
+
+Subprocesso 01: Definir filtros para atender o objetivo de busca
+
+    1.1. Definir os objetivos do levantamento de dados
+    1.2. Definir termos de busca e operadores lógicos
+    1.3. Definir abrangencia de termos semelhantes
+
+Subprocesso 02: Determinar a melhor estratégia de busca
+
+    2.1. Definir testes de uso dos operadores booleanos na base de dados escolhida
+    2.2. Implementar os testes de uso dos operadores booleanos na base de dados
+    2.3. Executar testes unitários para validar funcionamento da base de dados
+    2.4. Realizar buscas prévias por assuntos para decidir estratégia de busca
+    2.5. Redigir conclusões sobre estratégia para base de dados utilizada 
+
+**P04: EXTRAIR DADOS DOS CURRÍCULOS**
+
+Subprocesso 03: Extrair nomes com estratégia de busca escolhida
+
+    3.1. Quantificar currículos resultantes da estratégia de busca
+    3.2. Extrair os nomes de pesquisador dos currículos achados
+    3.3. Salvar lista de nomes de interesse em arquivo de texto
+
+**P05 ANALISAR DADOS EXTRAÍDOS**
+
+Subprocesso 04: Realizar extração de dados de todos especialistas
+
+    4.1. Extrair dados Currículo Lattes todos membros grupo em análise
+    4.2. Conferência dos dados quanto à duplicação
+    4.3. Armazenar dados extraídos
+    
+**P06 GERAR INFORMAÇÕES**
+
+Subprocesso 05: Montar classificação com base em indicador de especialidade
+
+    5.1. Propor indicadores de especialidade
+    5.2. Calcular indicadores para cada pesquisador
+    5.3. Gerar visualização de dados da classificação
