@@ -26,7 +26,6 @@ A razão para essa distinção é proporcionar o encapsulamento de dados, que é
 | Python (PEP 8)          | snake_case para funções e variáveis, PascalCase para classes        | Use nomes significativos |
 | JavaScript (Airbnb)     | camelCase para variáveis e funções, PascalCase para classes         | Evite abreviações     |
 | Clojure (Community conventions) | kebab-case para funções e variáveis                            | Use nomes descritivos |
-| Elixir (Community conventions)  | snake_case para variáveis e funções                           | Use nomes descritivos |
 | Julia (Julia Style Guide)       | lower_case para variáveis e funções                           | Use nomes significativos |
 | PowerShell (Best Practice Guide) | PascalCase para funções e cmdlets, camelCase para variáveis | Use Verb-Noun para cmdlets |
 | Bash (Google's Guide)   | snake_case para funções e variáveis                                 | Evite caracteres especiais e espaços |
@@ -47,11 +46,8 @@ JAVSCRIPT: Airbnb JavaScript Style Guide, disponível em:
     'https://github.com/airbnb/javascript'
 
 CLOJURE: Clojure Style Guide, disponível em: 
-    'cljdoc.org/style-guide'
+    'https://clojuredocs.org/examples-styleguide'
 
-ELIXIR: Elixir Style Guide: 
-    'github.com/elixir-lang/elixir/blob/master/lib/elixir/pages/StyleGuide.md'
-    
 POWERSHELL: Guia de Melhores Práticas para o PowerShell, disponível em: 
     'https://github.com/PoshCode/PowerShellPracticeAndStyle'
 
