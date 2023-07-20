@@ -12,7 +12,7 @@ Fazer push para o GitHub:
 
 # Guias de estilo para nomear arquivos e artefatos de código
 
-Ser bem compreensível e fácil de ler é requisito para boa comunicação em qualquer linguagem humana, em software não é diferente. Saber como nomear os artefatos de software e em qual estilo escrever este nome escolhido é essencial para escrever bons códigos. Quanto ao estilo o uso das maiúsculas e minúsculas e do caractere separador entre palavras é que define a legibilidade e fácil entendimento, popularmente temos o snake_case, camelCase, PascalCase e o MixedCase, cada alternativa tem sua popularidade dentre de alguma das cominidades de desenvolvimento.
+Ser bem compreensível e fácil de ler é requisito para boa comunicação em qualquer linguagem humana, em software não é diferente. Saber como nomear os artefatos de software e em qual estilo escrever este nome escolhido é essencial para escrever bons códigos. Quanto ao estilo o uso das maiúsculas e minúsculas e do caractere separador entre palavras é que define a legibilidade e fácil entendimento, popularmente temos o snake_case (todas as letras minúsculas com palavras separadas por underscores), camelCase, PascalCase e o MixedCase, cada alternativa tem sua popularidade dentre de alguma das cominidades de desenvolvimento.
 
 Já no que diz repeito à execução do código pelos computadores, basicamente, há dois níveis de visibilidade dos artefatos de software com relação a onde estão armazenados na estrutura dos arquivos de pacotes e módulos, há artefatos "exportados" e "não exportados" no que se refere à visibilidade dos membros de um pacote, como funções, tipos e variáveis. 
 
@@ -20,13 +20,17 @@ No caso da linguagem Go, por exemplo, um membro de um pacote é exportado se seu
 
 A razão para essa distinção é proporcionar o encapsulamento de dados, que é um princípio fundamental da programação orientada a objetos. Ele permite que você oculte os detalhes de implementação de um pacote e exponha apenas uma interface pública, o que pode tornar o código mais fácil de usar e manter.
 
-| Linguagem/Convenção | Estilo de Case                                                | Nomeação de Artefatos          |
-|---------------------|--------------------------------------------------------------|--------------------------------|
-| Go (Effective Go)   | MixedCase para exportados, camelCase para não exportados     | Conciso, mnemônico             |
-| Python (PEP 8)      | snake_case para funções e variáveis, PascalCase para classes | Use nomes significativos       |
-| JavaScript (Airbnb) | camelCase para variáveis e funções, PascalCase para classes  | Evite abreviações              |
-| PowerShell          | camelCase para variáveis, PascalCase para funções e cmdlets  | Use Verb-Noun para cmdlets     |
-| Bash (Google's Guide)| snake_case para funções e variáveis                          | Evite caracteres especiais e espaços |
+| Linguagem/Convenção     | Estilo de Case                                                     | Nomeação de Artefatos |
+|-------------------------|-------------------------------------------------------------------|-----------------------|
+| Go (Effective Go)       | MixedCase para exportados, camelCase para não exportados            | Conciso, mnemônico    |
+| Python (PEP 8)          | snake_case para funções e variáveis, PascalCase para classes        | Use nomes significativos |
+| JavaScript (Airbnb)     | camelCase para variáveis e funções, PascalCase para classes         | Evite abreviações     |
+| Clojure (Community conventions) | kebab-case para funções e variáveis                            | Use nomes descritivos |
+| Elixir (Community conventions)  | snake_case para variáveis e funções                           | Use nomes descritivos |
+| Julia (Julia Style Guide)       | lower_case para variáveis e funções                           | Use nomes significativos |
+| PowerShell (Best Practice Guide) | PascalCase para funções e cmdlets, camelCase para variáveis | Use Verb-Noun para cmdlets |
+| Bash (Google's Guide)   | snake_case para funções e variáveis                                 | Evite caracteres especiais e espaços |
+
 
 # Links para guias de estilo populares em suas comunidades
 
@@ -36,9 +40,18 @@ GO: Guia de Estilo do Go (Effective Go), disponível em:
 PYTHON: PEP 8 - Guia de Estilo para Código Python, disponível em: 
     'https://www.python.org/dev/peps/pep-0008/'
 
+JULIA: Guia de estilo da documentação, disponível em:
+    'https://docs.julialang.org/en/v1/manual/style-guide/'
+
 JAVSCRIPT: Airbnb JavaScript Style Guide, disponível em: 
     'https://github.com/airbnb/javascript'
 
+CLOJURE: Clojure Style Guide, disponível em: 
+    'cljdoc.org/style-guide'
+
+ELIXIR: Elixir Style Guide: 
+    'github.com/elixir-lang/elixir/blob/master/lib/elixir/pages/StyleGuide.md'
+    
 POWERSHELL: Guia de Melhores Práticas para o PowerShell, disponível em: 
     'https://github.com/PoshCode/PowerShellPracticeAndStyle'
 
