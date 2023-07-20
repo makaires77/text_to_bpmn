@@ -10,13 +10,13 @@ Fazer push para o GitHub:
     Adicione todos os arquivos ao repositório Git com git add ., faça um commit com git commit -m "Initial commit" e então faça push para o GitHub com git push -u origin master.
 
 
-# Guias de estilo
+# Guias de estilo para nomear arquivos e artefatos de código
 
-No contexto da programação há basicamente dois níveis de visibilidade dos artefatos de software com relação a onde estão na estrutura dos arquivos de pacotes e módulos, há artefatos "exportados" e "não exportados" no que se refere à visibilidade dos membros de um pacote, como funções, tipos e variáveis. 
+Ser bem compreensível e fácil de ler é requisito para boa comunicação em qualquer linguagem humana, em software não é diferente. Saber como nomear os artefatos de software e em qual estilo escrever este nome escolhido é essencial para escrever bons códigos. Quanto ao estilo o uso das maiúsculas e minúsculas e do caractere separador entre palavras é que define a legibilidade e fácil entendimento, popularmente temos o snake_case, camelCase, PascalCase e o MixedCase, cada alternativa tem sua popularidade dentre de alguma das cominidades de desenvolvimento.
 
-No caso da linguagem Go, por exemplo, um membro de um pacote é exportado se seu nome começa com uma letra maiúscula. Membros exportados são acessíveis fora do pacote em que são definidos. Por exemplo, se você define uma função `Print()` em um pacote, você pode chamá-la de outro pacote.
+Já no que diz repeito à execução do código pelos computadores, basicamente, há dois níveis de visibilidade dos artefatos de software com relação a onde estão armazenados na estrutura dos arquivos de pacotes e módulos, há artefatos "exportados" e "não exportados" no que se refere à visibilidade dos membros de um pacote, como funções, tipos e variáveis. 
 
-Por outro lado, os membros não exportados começam com uma letra minúscula e só podem ser acessados dentro do mesmo pacote onde são definidos. Se você tem uma função `print()` em um pacote, você não pode chamá-la de outro pacote.
+No caso da linguagem Go, por exemplo, um membro de um pacote é exportado se seu nome começa com uma letra maiúscula. Membros exportados são acessíveis fora do pacote em que são definidos. Por exemplo, se você define uma função `Print()` em um pacote, você pode chamá-la de outro pacote. Por outro lado, os membros não exportados começam com uma letra minúscula e só podem ser acessados dentro do mesmo pacote onde são definidos. Se você tem uma função `print()` em um pacote, você não pode chamá-la de outro pacote.
 
 A razão para essa distinção é proporcionar o encapsulamento de dados, que é um princípio fundamental da programação orientada a objetos. Ele permite que você oculte os detalhes de implementação de um pacote e exponha apenas uma interface pública, o que pode tornar o código mais fácil de usar e manter.
 
