@@ -1,6 +1,32 @@
 import timeit
 import matplotlib.pyplot as plt
-import numpy as np
+
+def factorize_procedural(n):
+    factors = []
+
+    for i in range(2, n+1):
+        while n % i == 0:
+            factors.append(i)
+            n //= i
+
+    return factors
+
+def factorize_functional(n):
+    factors = []
+
+    divide = lambda d: factors.append(d) and factorize_functional(n//d) if n % d == 0 else None
+
+    divide(2)
+
+    for i in range(3, int(n**0.5)+1, 2):
+        divide(i)
+
+    if n > 2:
+        factors.append(n)
+
+    return factors
+
+    compare_big_o_notation()
 
 def compare_execution_time():
     number = 1000000
@@ -48,12 +74,6 @@ def compare_big_o_notation():
 
     plt.legend()
     plt.show()
-
-# Resto do código...
-
-# compare_execution_time()
-# compare_big_o_notation()
-
 
 # Executar os testes
 # compare_execution_time()
