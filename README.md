@@ -29,12 +29,18 @@ A razão para essa distinção é proporcionar o encapsulamento de dados, que é
 | Bash (Google's Guide)| snake_case para funções e variáveis                          | Evite caracteres especiais e espaços |
 
 # Links para as guias de estilo
-    Guia de Estilo do Go (Effective Go): 'https://golang.org/doc/effective_go.html'
 
-    PEP 8 - Guia de Estilo para Código Python: 'https://www.python.org/dev/peps/pep-0008/'
+GO: Guia de Estilo do Go (Effective Go), disponível em: 
+    'https://golang.org/doc/effective_go.html'
 
-    Airbnb JavaScript Style Guide: 'https://github.com/airbnb/javascript'
+PYTHON: PEP 8 - Guia de Estilo para Código Python, disponível em: 
+    'https://www.python.org/dev/peps/pep-0008/'
 
-    Guia de Melhores Práticas para o PowerShell: 'https://github.com/PoshCode/PowerShellPracticeAndStyle'
+JAVSCRIPT: Airbnb JavaScript Style Guide, disponível em: 
+    'https://github.com/airbnb/javascript'
 
-    Google's Shell Style Guide: 'https://google.github.io/styleguide/shellguide.html'
+POWERSHELL: Guia de Melhores Práticas para o PowerShell, disponível em: 
+    'https://github.com/PoshCode/PowerShellPracticeAndStyle'
+
+BASH: Google's Shell Style Guide, disponível em:
+    'https://google.github.io/styleguide/shellguide.html'
