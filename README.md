@@ -42,7 +42,7 @@ PYTHON: PEP 8 - Guia de Estilo para Código Python, disponível em:
 JULIA: Guia de estilo da documentação, disponível em:
     'https://docs.julialang.org/en/v1/manual/style-guide/'
 
-JAVSCRIPT: Airbnb JavaScript Style Guide, disponível em: 
+JAVASCRIPT: Airbnb JavaScript Style Guide, disponível em: 
     'https://github.com/airbnb/javascript'
 
 CLOJURE: Clojure Style Guide, disponível em: 
