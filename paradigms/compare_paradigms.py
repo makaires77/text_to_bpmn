@@ -1,35 +1,30 @@
 import timeit
 import matplotlib.pyplot as plt
+import numpy as np
 
-def factorize_procedural(n):
+def factorize_procedural(number):
     factors = []
-
-    for i in range(2, n+1):
-        while n % i == 0:
+    i = 2
+    while i <= number:
+        if number % i == 0:
             factors.append(i)
-            n //= i
-
+            number = number / i
+        else:
+            i += 1
     return factors
 
-def factorize_functional(n):
-    factors = []
+def factorize_functional(number):
+    def factorize_recursive(n, i, factors):
+        if n == 1:
+            return factors
+        elif n % i == 0:
+            return factorize_recursive(n / i, i, factors + [i])
+        else:
+            return factorize_recursive(n, i + 1, factors)
+    return factorize_recursive(number, 2, [])
 
-    divide = lambda d: factors.append(d) and factorize_functional(n//d) if n % d == 0 else None
-
-    divide(2)
-
-    for i in range(3, int(n**0.5)+1, 2):
-        divide(i)
-
-    if n > 2:
-        factors.append(n)
-
-    return factors
-
-    compare_big_o_notation()
-
-def compare_execution_time():
-    number = 1000000
+def compare_execution_time(n):
+    number = n
 
     times = [
         ('Procedural', timeit.timeit(lambda: factorize_procedural(number), number=10)),
@@ -40,41 +35,25 @@ def compare_execution_time():
     labels, values = zip(*times)
     plt.bar(labels, values)
     plt.xlabel('Abordagem')
-    plt.ylabel('Tempo de execução (milissegundos)')
+    plt.ylabel('Tempo de execução (segundos)')
     plt.title('Comparação de Tempo de Execução')
-
-    for i, value in enumerate(values):
-        plt.text(i, value, f'{value*1000:.2f}', ha='center', va='bottom')
-
     plt.show()
 
-def compare_big_o_notation():
-    numbers = list(range(2, 21))
-    big_o_procedural = []
-    big_o_functional = []
+def update_big_o_plot(n):
+    numbers = np.linspace(2, n, 100)
+    procedural_times = []
+    functional_times = []
 
     for number in numbers:
-        time_procedural = timeit.timeit(lambda: factorize_procedural(number), number=10)
-        time_functional = timeit.timeit(lambda: factorize_functional(number), number=10)
+        procedural_time = timeit.timeit(lambda: factorize_procedural(number), number=10)
+        functional_time = timeit.timeit(lambda: factorize_functional(number), number=10)
+        procedural_times.append(procedural_time)
+        functional_times.append(functional_time)
 
-        big_o_procedural.append(time_procedural)
-        big_o_functional.append(time_functional)
-
-    # Plotar gráfico de linha para comparar a notação Big O
-    plt.plot(numbers, big_o_procedural, label='Procedural')
-    plt.plot(numbers, big_o_functional, label='Functional')
+    plt.plot(numbers, procedural_times, label='Procedural')
+    plt.plot(numbers, functional_times, label='Functional')
     plt.xlabel('Número')
     plt.ylabel('Tempo de execução (segundos)')
-    plt.title('Comparação de Notação Big O')
-
-    # Aproximação da curva para cada algoritmo
-    plt.plot(numbers, np.array(numbers)**2, label='Quadrático')
-    plt.plot(numbers, np.log2(numbers), label='Logarítmico')
-    plt.plot(numbers, numbers, label='Linear')
-
+    plt.title('Comparação de Tempo de Execução (Big O Notation)')
     plt.legend()
     plt.show()
-
-# Executar os testes
-# compare_execution_time()
-# compare_big_o_notation()

@@ -1,0 +1,32 @@
+text_to_bpmn
+├── .gitignore
+├── docs
+│   ├── create-monorepo.sh
+│   ├── New-MonorepoStructure.ps1
+│   └── README.md
+├── hello.py
+├── paradigms
+│   ├── app.py
+│   ├── app_widgets.py
+│   ├── benchmark.py
+│   ├── big_o.py
+│   ├── compare_paradigms.py
+│   └── node_modules
+├── README.md
+├── requirements.txt
+├── setup.py
+├── tests
+│   ├── processo_prospectar_especialistas_lattes.txt
+│   ├── test_converter.py
+│   ├── __init__.py
+│   └── __pycache__
+│       └── test_converter.cpython-311.pyc
+├── text_to_bpmn
+│   ├── converter.py
+│   ├── __init__.py
+│   └── __pycache__
+│       ├── converter.cpython-311.pyc
+│       └── __init__.cpython-311.pyc
+├── tree.txt
+└── __pycache__
+    └── app.cpython-311.pyc
