@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <script src="/paradigms/node_modules/d3/dist/d3.min.js"></script>
+    <script src="{{ url_for('static', filename='js/d3.min.js') }}"></script>
     <title>Comparação de Paradigmas</title>
 </head>
 <body>
     <h1>Comparação de Paradigmas</h1>
 
-    <form id="execution-time-form" action="/compare_execution_time" method="post">
+    <form id="execution-time-form" action="/api/compare_execution_time" method="post">
         <label for="number">Número a ser fatorado:</label>
         <input type="number" id="number" name="number" min="2" required>
         <input type="submit" value="Executar Comparação de Tempo de Execução">
     </form>
 
-    <form id="big-o-form" action="/update_big_o_plot" method="post">
+    <form id="big-o-form" action="/api/update_big_o_plot" method="post">
         <h3>Selecionar curvas:</h3>
         <label><input type="checkbox" name="curves" value="Quadrático"> Quadrático</label><br>
         <label><input type="checkbox" name="curves" value="Logarítmico"> Logarítmico</label><br>
@@ -26,7 +26,8 @@
     <div id="execution-time-chart"></div>
     <div id="big-o-chart"></div>
 
-    <script src="{{ url_for('static', filename='js/d3_execution_time_chart.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/d3_big_o_chart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/drawCompareChart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/drawUpdateChart.js') }}"></script>
 </body>
 </html>
+
